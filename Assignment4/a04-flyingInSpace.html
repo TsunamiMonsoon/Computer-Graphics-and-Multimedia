@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>Assignment 2</title>
+
+  <link href="Common/style.css" rel="stylesheet"/>
+
+  <style>
+    .value-display-grid {
+      display: grid;
+      grid-template-columns: 10em 5em 5em 5em;
+      border-style: solid;
+      border-width: 1px;
+      grid-template-rows: repeat(auto-fit,1.5em);
+    }
+
+    #gl-canvas {
+      width: 140vh;
+      height: 98vh;
+    }
+
+  </style>
+
+
+  <script src="Common/mersenne-twister.js"></script>
+  <script src="Common/MVnew.js"></script>
+  <script src="Common/cs4722_MV.js"></script>
+  <script src="Common/cs4722_x11_colors.js"></script>
+  <script src="Common/cs4722-initShaders_v2.js"></script>
+  <script src="Common/cs4722-shapes_v3-2.js"></script>
+  <script src="Common/cs4722-controls.js"></script>
+  <script src="a04-flyingInSpace.js"></script>
+</head>
+
+<body>
+<div class="flex-container">
+  <div class="flex-no-grow">
+    <canvas id="gl-canvas" ><!--width="900" height="550">-->
+      Browser must support canvas element
+    </canvas>
+  </div>
+  <div class="flex-full-grow">
+    <!-- area for user interaction and messages -->
+    <h2> Heather Willis' Assignment 2 </h2>
+
+    <p>
+      Manual movement with mouse and keys.
+    </p>
+
+
+    <p>
+      Frame rate: <span id="frame-rate"></span>
+    </p>
+    <p>
+      Object count: <span id="object-count"></span>
+    </p>
+    <table>
+      <tr><th>Key</th><th>Action</th></tr>
+<!--      <tr><td>W</td><td>Forward</td></tr>-->
+<!--      <tr><td>S</td><td>Backward</td></tr>-->
+      <tr><td>C</td><td>Right</td></tr>
+      <tr><td>Z</td><td>Left</td></tr>
+      <tr><td>Up arrow</td><td>Up</td></tr>
+      <tr><td>Down arrow</td><td>Down</td></tr>
+    </table>
+    <table id="controls"></table>
+    <div class="value-display-grid">
+      <div>Camera Position</div>
+      <div id="camera-x-value" class="value-displayx"></div>
+      <div id="camera-y-value" class="value-displayx"></div>
+      <div id="camera-z-value" class="value-displayx"></div>
+      <div>Camera At</div>
+      <div id="at-x-value"></div>
+      <div id="at-y-value" ></div>
+      <div id="at-z-value" ></div>
+      <div>Camera Up</div>
+      <div id="up-x-value"></div>
+      <div id="up-y-value" ></div>
+      <div id="up-z-value" ></div>
+      <div>forward cross up</div>
+      <div id="cross-x-value"></div>
+      <div id="cross-y-value" ></div>
+      <div id="cross-z-value" ></div>
+    </div>
+    <!--<div class="control-grid">
+        <div>Camera X</div>
+        <div id="camera-x-value" class="value-display">0</div>
+        <div></div>
+        <div>Camera Y</div>
+        <div id="camera-y-value" class="value-display">0</div>
+        <div></div>
+        <div>Camera Z</div>
+        <div id="camera-z-value"  class="value-display">0</div>
+        <div></div>
+    </div>
+-->
+  </div>
+
+</div>
+
+</body>
+</html>

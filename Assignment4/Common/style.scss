@@ -1,0 +1,97 @@
+
+/*
+  arctic nights    http://www.colourlovers.com/palette/3981829/Arctic_Nights
+ */
+$colorA: #221F22;
+$colorB: #8B5E66;
+$colorC: #AB9594;
+$colorD: #BBC5B4;
+$colorE: #E9D7BF;
+/**/
+
+$colorA: black !default;
+$colorB: black !default;
+$colorC: lightgray !default;
+$colorD: gray  !default;
+$colorE: white !default;
+
+
+html, body {
+    background-color:  $colorC;
+}
+
+body {
+  background-color:  $colorE;
+}
+
+body.b50 {
+  background-color: $colorE;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 1em;
+  border-style: solid;
+  border-color: $colorB;
+  color: $colorA;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-no-grow {
+  flex-grow: 0;
+}
+
+.flex-full-grow {
+  flex-grow: 1;
+}
+
+#gl-canvas {
+  width: 98vh;
+  height: 98vh;
+}
+
+.value-display {
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  width: 5em;
+}
+
+
+
+table.grid, table.grid th, table.grid td {
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 1px;
+  padding: 3px;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: 8em .5fr 5em;
+  grid-template-rows: repeat(auto-fit,1.5em);
+  //border: solid;
+  //border-collapse: collapse;
+  //border-width: 1px;
+}
+
+.control-grid > div {
+  //border: solid;
+  border-collapse: collapse;
+  border-width: 1px;
+  padding: 2px;
+}
+
+input[type=range]{
+  width: 100%;
+  background-color: blue;
+}
+
+.value-display-grid {
+  display: grid;
+  grid-template-columns: 10em 5em 5em 5em;
+  border-style: solid;
+  border-width: 1px;
+  grid-template-rows: repeat(auto-fit,1.5em);
+}
