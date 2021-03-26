@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>Assignment 5</title>
+
+  <link href="Common/style.css" rel="stylesheet"/>
+  <style>
+    #gl-canvas {
+      width: 130vh;
+      height: 98vh;
+    }
+  </style>
+
+  <script src="Common/twgl-full.min.js"></script>
+  <script src="Common/MVnew.js"></script>
+  <script src="Common/cs4722_MV.js"></script>
+  <script src="Common/cs4722_x11_colors.js"></script>
+  <script src="Common/cs4722-initShaders_v2.js"></script>
+  <script src="Common/cs4722-shapes_v4.js"></script>
+  <script src="Common/cs4722-controls.js"></script>
+  <script src="Common/cs4722-camera_v2.js"></script>
+  <script src="Common/teapot-0854590.js"></script>
+  <script src="a05-create-a-scene.js"></script>
+</head>
+
+<body>
+<div class="flex-container">
+  <div class="flex-no-grow">
+    <canvas id="gl-canvas" width="1000" height="700">
+      Browser must support canvas element
+    </canvas>
+  </div>
+  <div class="flex-full-grow">
+    <!-- area for user interaction and messages -->
+    <h2> Heather Willis' Assignment 5 </h2>
+    <p>
+      Controls to control shading
+      and click in the frame with your mouse and hold to move around
+    </p>
+
+    <p hidden>
+      Frame rate: <span id="frame-rate"></span>
+    </p>
+    <table id="controls"></table>
+  </div>
+
+</div>
+
+</body>
+</html>

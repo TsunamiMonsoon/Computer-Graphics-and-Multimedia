@@ -1,0 +1,66 @@
+/*
+  arctic nights    http://www.colourlovers.com/palette/3981829/Arctic_Nights
+ */
+/**/
+html, body {
+  background-color: #AB9594; }
+
+body {
+  background-color: #E9D7BF; }
+
+body.b50 {
+  background-color: #E9D7BF;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 1em;
+  border-style: solid;
+  border-color: #8B5E66;
+  color: #221F22; }
+
+.flex-container {
+  display: flex; }
+
+.flex-no-grow {
+  flex-grow: 0; }
+
+.flex-full-grow {
+  flex-grow: 1; }
+
+#gl-canvas {
+  width: 98vh;
+  height: 98vh; }
+
+.value-display {
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  width: 5em; }
+
+table.grid, table.grid th, table.grid td {
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 1px;
+  padding: 3px; }
+
+.control-grid {
+  display: grid;
+  grid-template-columns: 8em .5fr 5em;
+  grid-template-rows: repeat(auto-fit, 1.5em); }
+
+.control-grid > div {
+  border-collapse: collapse;
+  border-width: 1px;
+  padding: 2px; }
+
+input[type=range] {
+  width: 100%;
+  background-color: blue; }
+
+.value-display-grid {
+  display: grid;
+  grid-template-columns: 10em 5em 5em 5em;
+  border-style: solid;
+  border-width: 1px;
+  grid-template-rows: repeat(auto-fit, 1.5em); }
+
+/*# sourceMappingURL=style.css.map */
